@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NOIR – Moda Minimalista</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <style>
+    .fade-in-up {
+      animation: fadeInUp 1s ease-out both;
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body class="font-serif text-white bg-black">
+
+  <!-- HERO -->
+  <section class="relative min-h-screen flex items-center justify-center text-center px-6 overflow-hidden">
+    <!-- Imagen desenfocada de fondo -->
+    <div class="absolute inset-0 z-0">
+      <img src="fondo-noir.jpg" class="w-full h-full object-cover filter blur-md brightness-75" alt="Fondo Noir" />
+    </div>
+
+    <!-- Contenido -->
+    <div class="relative z-10 text-white fade-in-up">
+      <h1 class="text-6xl md:text-7xl font-bold tracking-widest mb-4 uppercase">NOIR</h1>
+      <p class="text-xl md:text-2xl mb-6 italic text-gray-200">La elegancia está en la simplicidad</p>
+      <a href="#coleccion" class="border border-white text-white font-semibold px-6 py-3 rounded-full hover:bg-white hover:text-black transition">
+        Descubrir colección
+      </a>
+    </div>
+  </section>
+
+  <!-- COLECCIÓN -->
+  <section id="coleccion" class="bg-white text-black py-20 px-6">
+    <div class="max-w-5xl mx-auto text-center animate__animated animate__fadeInUp">
+      <h2 class="text-3xl md:text-4xl font-semibold mb-10">Colección Invierno 2025</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div class="hover:scale-105 transform transition duration-300">
+          <img src="look1.jpg" class="rounded-xl shadow-lg mb-3" alt="Look 1" />
+          <h3 class="font-medium text-lg">Monocromo Atemporal</h3>
+          <p class="text-sm text-gray-600">Corte recto, tonos grises y blancos puros</p>
+        </div>
+        <div class="hover:scale-105 transform transition duration-300">
+          <img src="look2.jpg" class="rounded-xl shadow-lg mb-3" alt="Look 2" />
+          <h3 class="font-medium text-lg">Elegancia Funcional</h3>
+          <p class="text-sm text-gray-600">Diseño sobrio con detalles técnicos</p>
+        </div>
+        <div class="hover:scale-105 transform transition duration-300">
+          <img src="look3.jpg" class="rounded-xl shadow-lg mb-3" alt="Look 3" />
+          <h3 class="font-medium text-lg">Negro sobre negro</h3>
+          <p class="text-sm text-gray-600">Volúmenes suaves, contraste de texturas</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-black text-center py-20 px-6 animate__animated animate__fadeInUp">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">Vístete de intención</h2>
+    <p class="text-lg mb-6 text-gray-300">Compra desde casa, con envíos gratuitos en todo México</p>
+    <a href="#" class="border border-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-black transition">Comprar ahora</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-center text-sm text-gray-500 py-6">
+    © 2025 NOIR · Moda minimalista · @noir.clothing
+  </footer>
+
+</body>
+</html>
